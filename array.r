@@ -99,3 +99,15 @@ r3 12 15  3
 >  print(multiArray%in%remove)
  [1] FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [15] FALSE FALSE  TRUE  TRUE
+
+##### Write R function to create 2 dimensional 4x3 Array of sequence of even integers greater than 40.
+
+> new_array<-array(seq(from=40,length.out=12,by=2),c(4,3))
+> print("4x3 array of sequence of even integers greater than 40")
+[1] "4x3 array of sequence of even integers greater than 40"
+> print(new_array)
+     [,1] [,2] [,3]
+[1,]   40   48   56
+[2,]   42   50   58
+[3,]   44   52   60
+[4,]   46   54   62
