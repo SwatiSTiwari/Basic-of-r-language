@@ -34,7 +34,7 @@
 [1] "hello world"
 > v4
 [1] "hello world"
-> ############### LEGAL VARIALE NAME #########################
+> ############### LEGAL VARIABLE NAME #########################
 > newvar<-"welcome"
 > new_var<-"welcome"
 > newVar<-"welcome"
