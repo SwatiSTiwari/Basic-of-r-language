@@ -93,7 +93,7 @@
 [1] "numeric"
 
 > class(b)
-[1] "integer"
+[1] "numeric"
 > ###################### we can perform maths operation in R #####################
 > 50+10    # addition in R
 [1] 60
