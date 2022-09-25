@@ -19,7 +19,7 @@
 > new_matrix[,3]
 [1] 7 8 9
 
-> ##### acedss more than one row ######
+> ##### access more than one column ######
 > new_matrix<-matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,ncol=3)
 > new_matrix[,c(1,3)]
      [,1] [,2]
