@@ -105,3 +105,7 @@ student<-data.frame(rno=(1:5),names=c("swati","varsha","pooja","vishal","shweta"
 3   3  pooja         95
 4   4 vishal         98
 5   5 shweta         89
+
+
+#====== join operation on dataframe =========
+
