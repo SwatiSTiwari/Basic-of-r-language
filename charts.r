@@ -18,3 +18,45 @@ month<-(1:12)
 > install.packages("plotrix")
 > library("plotrix")
 > pie3D(readers,labels = books, explode = 0.1, main ="readers survey", col = rainbow(length(books)))
+
+# Bar chart
+> print(customer_data)
+  CustomerId    Product
+1          1     Laptop
+2          2     Mobile
+3          3 Television
+4          4     Iphone
+5          5       Ipad
+6          6   Mackbook
+> barplot(customer_data$CustomerId,names.arg = customer_data$Product)
+
+#Bar chart with different colors
+> barplot(customer_data$CustomerId,names.arg = customer_data$Product,col = rainbow(6))
+> barplot(customer_data$CustomerId,names.arg = customer_data$Product,col = heat.colors(6))
+> barplot(customer_data$CustomerId,names.arg = customer_data$Product,col = terrain.colors(6))
+> barplot(customer_data$CustomerId,names.arg = customer_data$Product,col = topo.colors(6))
+
+# Grouped Bar chart
+> student<-list(names=c("anas","arif","danish","atharva"),Per=c(88,87,98,78),Per=c(92,91,65,78))
+> print(student)
+  names mathPer engPer
+1    anas      88     92
+2    arif      87     91
+3  danish      98     65
+4 atharva      78     78
+
+# Let's make it matrix and no.of rows=2 and no.of col=4 for Grouped Bar chart
+> studMat<-matrix(student$Per,student$Per,nrow=2,ncol=4)
+> rownames(studMat)=c("Math %", "English %")
+> colnames(studMat)=(student$names)
+> print(studMat)
+  
+
+# Now make it Group chart
+> barplot(studMat,xlab = "student names",ylab = "percentage of students",col = c(7,2),beside = TRUE)
+
+# Stack Chart
+img<-barplot(studMat,xlab = "student names",ylab = "percentage of students",main = "School Report",names.arg = student$names,col = rainbow(5))
+
+#heading of chart
+> legend(x="topright",cex=1,legend =c("English %","Math %"),fill = rainbow(5))
