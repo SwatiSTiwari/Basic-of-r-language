@@ -34,7 +34,7 @@
 [1] "hello world"
 > v4
 [1] "hello world"
-> ############### LEGAL VARIALE NAME #########################
+> ############### LEGAL VARIABLE NAME #########################
 > newvar<-"welcome"
 > new_var<-"welcome"
 > newVar<-"welcome"
@@ -93,7 +93,7 @@
 [1] "numeric"
 
 > class(b)
-[1] "integer"
+[1] "numeric"
 > ###################### we can perform maths operation in R #####################
 > 50+10    # addition in R
 [1] 60
