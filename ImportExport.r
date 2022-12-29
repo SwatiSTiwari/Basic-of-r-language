@@ -33,3 +33,13 @@ install.packages("writexl")
 library(writexl)
 #exporting the file
 write_excel(ExcelDemo,"NewBook.xlsx",row.names=FALSE)
+
+
+#installing the xlsx package
+install.packages("xlsx")
+library(xlsx)
+
+demo <- read.xlsx("Book1.xlsx",rowIndex=2,colIndex = 2)
+
+#write the file
+write.xlsx(demo,"ExcelDemo.xlsx",append=T)
