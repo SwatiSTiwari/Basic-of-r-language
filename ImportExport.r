@@ -18,3 +18,18 @@ Diamonds
 #exporting the file
 Diamonds <- cbind(Diamonds,colour=c("red","white","blue","white","white","red","white","blue","white","white","red","white","blue","white","white"))
 write.csv(Diamonds,"Heere.csv",row.names = FALSE)
+
+#importing a excel file
+#installing required packages
+setwd("Path")
+
+install.packages("readxl")
+library(readxl)
+
+ExcelDemo <- read_excel("Book1.xlsx",skip = 1)
+ExcelDemo <- rbind(ExcelDemo,list(105,"The awakening","Nathuram Purandare",340))
+
+install.packages("writexl")
+library(writexl)
+#exporting the file
+write_excel(ExcelDemo,"NewBook.xlsx",row.names=FALSE)
